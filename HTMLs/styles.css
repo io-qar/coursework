@@ -1,0 +1,32 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-image: url(background.jpg);
+}
+
+p{
+    font-family: 'Yanone Kaffeesatz';
+    font-size: x-large;
+}
+
+.buttonup{
+    width :88px; 
+    height: 118px;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover { 
+    text-decoration: underline;
+    color: red;
+}
