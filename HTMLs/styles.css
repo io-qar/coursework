@@ -1,16 +1,15 @@
-body{
+section {
     font-family: 'Open Sans', sans-serif;
     padding-left: 20%;
     padding-right: 20%;
     background-image: url(background.jpg);
 }
 
-p{
-    font-family: 'Yanone Kaffeesatz';
+p {
     font-size: x-large;
 }
 
-.buttonup{
+.buttonup {
     width :88px; 
     height: 118px;
     position: fixed;
@@ -18,15 +17,105 @@ p{
     right: 50px;
 }
 
-h3{
+h3 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
+    font-weight: small;
 }
 
 a {
     text-decoration: none;
 }
-a:hover { 
-    text-decoration: underline;
-    color: red;
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 70px;
+    background-color: #3d4852;
+    padding: 10px 0;
+}
+
+.menu-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.logo-img{
+    height: 50px;
+}
+
+.menu-icon{
+    font-size: 2.4em;
+    color: white;
+    line-height: 50px;
+}
+
+nav{
+    position: absolute;
+    background-color: #3d4852;
+    top: 70px;
+    left: 0;
+    width: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    max-height: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    padding: 0 15px;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 12px;
+    color: #dae1e7;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+nav ul li a:hover, nav ul li a:focus{
+    color: #eb6f4a;
+}
+
+#checkbox {
+    display: none;
+}
+
+#checkbox:checked ~ nav ul {
+    max-height: 200px;
+    padding: 15px 0;
+    transition: all 0.5s;
+}
+
+.fa-bars:before {
+    content: "\f0c9";
+}
+
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+    nav {
+      position: relative;
+      top:-10px;
+      background-color: transparent;
+    }
+    nav ul {
+      max-height: 70px;
+      padding: 15px 0;
+      text-align: right;
+    }
+    nav ul li {
+      display: inline-flex;
+      padding-left: 20px;
+    }
 }
